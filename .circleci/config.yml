@@ -9,7 +9,7 @@ jobs:
     - run:
         name: SetUp_Lev
         command: |
-          ls
+          
           
           sleep 2s
 
