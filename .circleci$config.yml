@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  abas:
+    docker:
+      - image: python:3.8
+
+    steps:
+    - checkout
+    - run:
+        name: SetUp_Lev
+        command: |
+          ls
+          ls
+          sleep 2s
+
+    - run:
+        name: SetUp_Go
+        command: |
+          ls
+          ls
+          sleep 2s
+
+    - run:
+        name: SetUp_Stop
+        command: |
+          ls
+          ls
+          top
+
+
+
+
+
+
+workflows:
+  version: 2
+  abas:
+    jobs:
+    - abas
