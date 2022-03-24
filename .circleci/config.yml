@@ -23,7 +23,7 @@ jobs:
     - run:
         name: SetUp_Stop
         command: |
-          ls
+          lsl
           
           
 
